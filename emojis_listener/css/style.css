@@ -1,0 +1,271 @@
+:root {
+  --pipe-height: 260px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+code {
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: lightgrey;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+.press-keys-container {
+  height: 300px;
+  min-width: 320px;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.press-keys-container h2 {
+  font-size: 2rem;
+}
+
+.press-keys-container h3 {
+  margin: 1rem;
+}
+
+.press-keys-container p {
+  margin: 10px;
+  font-size: 1.4rem;
+}
+
+.emojis-table-container {
+  width: 50%;
+  height: 150px;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px auto;
+  /* background-color: blue; */
+  /* border: 2px solid black; */
+}
+
+.emojis-table {
+  width: 100%;
+  height: 100%;
+}
+.emojis-table-container td {
+  width: 33.3%;
+  height: 33.3%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: black;
+  /* background-color: magenta; */
+}
+
+.mouseover-container {
+  height: 700px;
+  min-width: 320px;
+  /* background-color: wheat; */
+}
+
+.mouseover-container h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mouseover-container p {
+  margin: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.game-container {
+  /* background-color: violet; */
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mouseover--btn-reset {
+  position: relative;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+}
+
+.game-background-container {
+  /* background-color: green; */
+  height: 381px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* or any other alignment value */
+  align-items: center; /* or any other alignment value */
+
+
+
+
+
+}
+
+.game-background-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fellisonleao.github.io%2Fclumsy-bird%2Fdata%2Fimg%2Fbg.png&f=1&nofb=1");
+  cursor: url("https://raw.githubusercontent.com/samuelcust/flappy-bird-assets/master/sprites/yellowbird-upflap.png"),
+    default;
+  background-repeat: none;
+  background-size: 100% 110%;
+}
+
+.game-counter-die {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0px 0px 1px white;
+}
+.game-obstacles {
+  height: 90%;
+  padding: 5px 5px 5px 5px;
+  margin: auto;
+  /* background-color: azure; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.pipe-hit-box_1 {
+  width: 50px;
+  height: var(--pipe-height);
+  position: relative;
+  top: 130px;
+  left: 0px;
+  align-items: center;
+}
+
+.pipe-hit-box_2 {
+  width: 50px;
+  height: var(--pipe-height);
+  position: relative;
+  top: -70px;
+  left: 0px;
+  align-items: center;
+}
+
+.pipe-hit-box_3 {
+  width: 50px;
+  height: var(--pipe-height);
+  position: relative;
+  top: 200px;
+  left: 0px;
+  align-items: center;
+}
+
+.pipe-hit-box_4 {
+  width: 50px;
+  height: 80px;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  align-items: center;
+}
+
+.down {
+  transform: rotate(180deg);
+}
+
+.message-container {
+
+  position: absolute;
+  left: calc(50% - 475px);
+  right: 50%;
+  background: rgba(0,0,0,0.5);
+}
+
+#message {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 0px 10px red;
+}
+
+/* .game-pipes {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color:darkblue;
+} */
+
+/* 
+
+.pipe {
+  height: var(--pipe-height);
+
+  position: relative;
+  top: 23px;
+}
+
+.pipe.down {
+  top: -2px;
+  transform: rotate(180deg);
+}
+
+.pipeHitBox.down {
+  top: 10px;
+}
+.pipeHitBox {
+  bottom: -20px;
+} */
+
+/* .emojiResult {
+  font-size: 32px;
+}
+
+#reset {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.start,
+.finish {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+#comment {
+  color: gray;
+  font-size: 10px;
+  font-style: italic;
+} */

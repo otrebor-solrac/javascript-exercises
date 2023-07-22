@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emojis</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Prueba los eventos</h1>
+
+    <section class="press-keys-container">
+      <h2><code>Keypress</code></h2>
+      <p>Teclea para cambiar los emojis.</p>
+      <input class="emoji-input" type="text" maxlength="250" />
+
+      <h3>Emojis</h3>
+
+      <div class="emojis-table-container">
+        <table class="emojis-table">
+          <tr>
+            <td class="emoji-box"><span id="emoji-result-1"></span></td>
+            <td class="emoji-box"><span id="emoji-result-2"></span></td>
+            <td class="emoji-box"><span id="emoji-result-3"></span></td>
+          </tr>
+          <tr>
+            <td class="emoji-box"><span id="emoji-result-4"></span></td>
+            <td class="emoji-box"><span id="emoji-result-5"></span></td>
+            <td class="emoji-box"><span id="emoji-result-6"></span></td>
+          </tr>
+          <tr>
+            <td class="emoji-box"><span id="emoji-result-7"></span></td>
+            <td class="emoji-box"><span id="emoji-result-8"></span></td>
+            <td class="emoji-box"><span id="emoji-result-9"></span></td>
+          </tr>
+        </table>
+        <div class="emojis-table--date">
+          <p>
+            <b>Ultima hora actualizada: </b
+            ><span class="emojis-table--last-hour">19:38:23</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mouseover-container">
+      <h2><code>mouseover</code></h2>
+      <p>No choques con las tuberías.</p>
+      <div class="game-container">
+        <div class="mouseover--btn-reset-container">
+          <button class="mouseover--btn-reset" disabled>Reiniciar</button>
+        </div>
+        <div class="game-background-container">
+         
+          <div class="game-background-img">
+            <span class="game-counter-die">MUERTES: 0</span>
+            <div class="game-obstacles">
+              <div class="pipe-hit-box_1 pipe">
+                <img
+                  src="https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/pipe-green.png?raw=true"
+                  alt="There is a pipe"
+                />
+              </div>
+              <div class="pipe-hit-box_2 down pipe">
+                <img
+                  src="https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/pipe-green.png?raw=true"
+                  alt="There is a pipe"
+                />
+              </div>
+              <div class="pipe-hit-box_3 pipe">
+                <img
+                  src="https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/pipe-green.png?raw=true"
+                  alt="There is a pipe"
+                />
+              </div>
+              <div class="pipe-hit-box_4 down pipe">
+                <img
+                  src="https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/pipe-green.png?raw=true"
+                  alt="There is a pipe"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="message-container">
+            <div id="message" hidden>PERDISTE</div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
